@@ -7,7 +7,7 @@ const withMainLayout = <P extends object>(WrappedComponent: React.ComponentType<
       <div className={styles.root}>
         <WrappedComponent {...props} />
 
-        <div className={styles.root}>
+        <div className={styles.footer}>
           <div className={styles.footerLeft}>Version: {CURRENT_VERSION}, by Khoa Nguyen </div>
 
           <div className={styles.footerRight}>Copyright © 2024. All rights reserved.</div>

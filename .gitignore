@@ -24,6 +24,7 @@
 .env.dev
 
 npm-debug.log*
+/dist
 yarn-debug.log*
 yarn-error.log*
 
