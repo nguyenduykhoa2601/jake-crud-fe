@@ -1,0 +1,28 @@
+@import "./variables";
+
+%flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%flex-center-x {
+	display: flex;
+	justify-content: center;
+}
+
+%flex-center-y {
+	display: flex;
+	align-items: center;
+}
+
+%button-position {
+	color: $blue_5;
+
+	@extend %flex-center;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.9;
+	}
+}

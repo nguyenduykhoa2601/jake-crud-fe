@@ -1,0 +1,36 @@
+@import '../../../styles/index.scss';
+
+.root {
+  position: relative;
+
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  .type {
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .delete {
+    svg {
+      fill: $red_4;
+    }
+  }
+
+  .settings {
+    position: absolute;
+    top: 20px;
+    z-index: 99;
+    right: 20px;
+
+    span {
+      padding: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

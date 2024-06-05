@@ -1,0 +1,70 @@
+@import '../../../styles/index.scss';
+
+.root {
+  margin-top: 20px;
+  position: relative;
+
+  //   background-color: #fff;
+
+  min-height: 300px;
+  border-radius: 4px;
+
+  .params {
+    background-color: #fff;
+
+    padding: 10px 20px;
+
+    .title {
+      //   text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: $blue-6;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      display: flex;
+
+      .left {
+        flex: 1;
+      }
+
+      .split {
+        width: 1px;
+        height: 100%;
+        background-color: #ccc;
+        height: 400px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .right {
+        flex: 1;
+
+        .selectFeature {
+          display: flex;
+          column-gap: 14px;
+          margin-bottom: 10px;
+        }
+
+        .btnSetting {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .btnSubmit {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  }
+}

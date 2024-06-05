@@ -1,0 +1,27 @@
+@import '../../../styles/index.scss';
+
+.root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  column-gap: 40px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 3px #ccc;
+  // border: 1px solid #ccc;
+
+  background-color: #8a5cd1;
+  color: white;
+
+  .title {
+    font-size: 24px;
+  }
+
+  .value {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}

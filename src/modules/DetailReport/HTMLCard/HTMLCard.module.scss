@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  .download {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    max-width: 300px;
+  }
+
+  iframe {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/index.scss';
+
+.root {
+  margin-top: 20px;
+
+  .header {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .body {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
