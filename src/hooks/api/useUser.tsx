@@ -16,10 +16,12 @@ const useUser = () => {
     userAPI
       .getUsers(params)
       .then((res) => {
-        setUsers(res.users)
-        setPageNumber(res.page)
-        setTotal(res.total)
-        setIsLoading(false)
+        if (res) {
+          setUsers(res.users)
+          setPageNumber(res.page)
+          setTotal(res.total)
+          setIsLoading(false)
+        }
       })
       .catch((error) => {
         console.log('err', error)
