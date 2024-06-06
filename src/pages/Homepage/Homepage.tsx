@@ -15,7 +15,6 @@ const HomePage: React.FC = () => {
   const [form] = Form.useForm()
   const [editingUser, setEditingUser] = useState<IUserInfo | null>(null)
 
-  console.log('users', users)
   useEffect(() => {
     fetchUsers({ pageNumber, pageSize: PAGE_SIZE })
   }, [pageNumber])
@@ -102,7 +101,7 @@ const HomePage: React.FC = () => {
         pagination={{
           current: pageNumber,
           pageSize: PAGE_SIZE,
-          total: users.length,
+          total: total,
           onChange: (page) => setPageNumber(page)
         }}
       />
