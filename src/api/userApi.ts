@@ -2,7 +2,7 @@ import axios from 'axios'
 import { IParamsCreateUser, IParamsDeleteUser, IParamsUpdateUser } from '../interfaces/user'
 import { IPagination } from '../interfaces/pagination'
 
-const USER_BASE_URL = `${process.env.REACT_APP_ENDPOINT_API}/api/user`
+const USER_BASE_URL = `https://jake-crud-be.vercel.app/api/user`
 
 export const userAPI = {
   createUser: async (params: IParamsCreateUser) => {
