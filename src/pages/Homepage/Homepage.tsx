@@ -89,11 +89,14 @@ const HomePage: React.FC = () => {
 
       <Table
         columns={columns}
-        dataSource={users.map((item) => {
-          return {
-            ...item
-          }
-        })}
+        dataSource={
+          users &&
+          users.map((item) => {
+            return {
+              ...item
+            }
+          })
+        }
         loading={isLoading}
         rowKey='_id'
         pagination={{
