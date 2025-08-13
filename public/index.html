@@ -9,9 +9,29 @@
     <meta name="description" content="AutoEDA" />
 
     <title>CRUD App</title>
+    <script src="https://storage.googleapis.com/braristajs/braristajs/latest/chat.min.js" async=""></script>
+
   </head>
 
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var script = document.createElement('script');
+        script.src = 'https://storage.googleapis.com/braristajs/braristajs/latest/chat.min.js';
+        script.async = true;
+        script.onload = function () {
+          BraristaChat.autoInit({
+            token: "VubAOlQpAbmFRcu4W9Da7vRqBMad0ICgULc3SkC-XdU",
+            api_base: "https://ai-chatbot-backend-3mabhejzuq-nw.a.run.app",
+            id: "chat",
+          });
+        };
+        document.body.appendChild(script);
+      })();
+    </script>
+
+    <div id="chat" class="brarista-chat-container"></div>
+
   </body>
 </html>
